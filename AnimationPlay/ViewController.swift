@@ -47,14 +47,13 @@ class ViewController: UIViewController {
         var translateX = 15
         var translateY = 15
         
-        UIView.animateWithDuration(1, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
-            oval.transform = CGAffineTransformRotate(oval.layer.affineTransform(), CGFloat(M_2_PI))
-
-        }) { (bool) -> Void in
-            UIView.animateWithDuration(2, animations: { () -> Void in
-                oval.transform = CGAffineTransformMakeTranslation(oval.center.x + translateX, oval.center.y + translateY)
-            })
-        }
+//        UIView.animateWithDuration(1, delay: 0.2, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+//            oval.transform = CGAffineTransformRotate(oval.layer.affineTransform(), CGFloat(M_2_PI))
+//        }) { (bool) -> Void in
+//            UIView.animateWithDuration(2, animations: { () -> Void in
+//                oval.transform = CGAffineTransformMakeTranslation(oval.center.x + translateX, oval.center.y + translateY)
+//            })
+//        }
         
         
         //var viewLayer = UIView(frame: CGRectMake(50, 50, 100, 100))

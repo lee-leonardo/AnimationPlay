@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3871B0B719BE168200A2B179 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3871B0B619BE168200A2B179 /* MapKit.framework */; };
 		3898794219BC1129004C5357 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3898794119BC1129004C5357 /* AppDelegate.swift */; };
 		3898794419BC1129004C5357 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3898794319BC1129004C5357 /* ViewController.swift */; };
 		3898794719BC1129004C5357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3898794519BC1129004C5357 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3871B0B619BE168200A2B179 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3898793C19BC1129004C5357 /* AnimationPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3898794019BC1129004C5357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3898794119BC1129004C5357 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3871B0B719BE168200A2B179 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		3898793319BC1129004C5357 = {
 			isa = PBXGroup;
 			children = (
+				3871B0B619BE168200A2B179 /* MapKit.framework */,
 				3898793E19BC1129004C5357 /* AnimationPlay */,
 				3898795119BC1129004C5357 /* AnimationPlayTests */,
 				3898793D19BC1129004C5357 /* Products */,
@@ -185,6 +189,14 @@
 				TargetAttributes = {
 					3898793B19BC1129004C5357 = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					3898794D19BC1129004C5357 = {
 						CreatedOnToolsVersion = 6.0;
@@ -425,6 +437,7 @@
 				3898795A19BC1129004C5357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3898795B19BC1129004C5357 /* Build configuration list for PBXNativeTarget "AnimationPlayTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +446,7 @@
 				3898795D19BC1129004C5357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
