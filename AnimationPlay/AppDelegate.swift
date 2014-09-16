@@ -27,8 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.alert?.addAction(okay)
             }
         }
-        self.window!.rootViewController.presentViewController(self.alert, animated: true, completion: nil)
-        
     }
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {

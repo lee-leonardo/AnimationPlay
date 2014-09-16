@@ -55,7 +55,11 @@ class ViewController: UIViewController {
 //            })
 //        }
         
-        
+        UIView.animateWithDuration(2, delay: 0.1, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.8, options: UIViewAnimationOptions.CurveEaseInOut, animations: { () -> Void in
+            oval.transform = CGAffineTransformConcat(CGAffineTransformRotate(oval.layer.affineTransform(), CGFloat(M_2_PI)), CGAffineTransformMakeTranslation(self.view.center.x, self.view.center.y))
+        }) { (bool) -> Void in
+        }
+    
         //var viewLayer = UIView(frame: CGRectMake(50, 50, 100, 100))
         //viewLayer.layer
         
